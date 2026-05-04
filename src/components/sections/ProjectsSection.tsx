@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { PROJECTS, PROJECT_FILTERS } from '../../constants';
 import { SectionHeader, FilterBar, Badge } from '../ui';
 import { useProjectFilter } from '../../hooks';

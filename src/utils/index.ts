@@ -1,5 +1,4 @@
 import { clsx, type ClassValue } from 'clsx';
-import React, { useMemo, FC } from 'react';
 import emailjs from "emailjs-com";
 import { ContactFormData } from '@/types';
 
