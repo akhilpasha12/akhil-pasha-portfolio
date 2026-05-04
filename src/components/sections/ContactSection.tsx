@@ -11,7 +11,11 @@ export function ContactSection() {
 
   return (
     <div>
-      <SectionHeader title="Let's" accent="Connect" subtitle="Open to exciting opportunities — let's talk" />
+      <SectionHeader
+        title="Let's"
+        accent="Connect"
+        subtitle="Open to exciting opportunities — let's talk"
+      />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Contact Form */}
@@ -35,7 +39,7 @@ export function ContactSection() {
               <Button onClick={resetForm}>Send Another →</Button>
             </motion.div>
           ) : (
-            <form onSubmit={handleSubmit} noValidate>
+            <form onSubmit={handleSubmit} noValidate >
               <p className="font-syne text-[20px] font-bold text-cream mb-1">Send a Message</p>
               <p className="text-[13px] text-brand-muted-2 mb-5">I typically reply within 24 hours.</p>
 
@@ -63,8 +67,8 @@ export function ContactSection() {
           className="flex flex-col gap-3"
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: '-40px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           {CONTACT_CARDS.map((card, i) => {
             const inner = (
@@ -73,8 +77,14 @@ export function ContactSection() {
                   {card.icon}
                 </div>
                 <div>
-                  <p className="text-[10px] text-brand-muted dark:text-dm-muted font-bold uppercase tracking-[0.4px]">{card.label}</p>
-                  <p className={`text-[14px] font-medium mt-0.5 ${isDark ? 'text-dm-text' : 'text-brand-dark'}`}>{card.value}</p>
+                  <p className="text-[10px] text-brand-muted dark:text-dm-muted font-bold uppercase tracking-[0.4px]">
+                    {card.label}
+                  </p>
+                  <p
+                    className={`text-[14px] font-medium mt-0.5 ${isDark ? "text-dm-text" : "text-brand-dark"}`}
+                  >
+                    {card.value}
+                  </p>
                 </div>
               </>
             );
@@ -89,7 +99,7 @@ export function ContactSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: i * 0.07 }}
-                className={`flex items-center gap-3.5 border rounded-2xl px-5 py-4 transition-all hover:border-brand-orange hover:translate-x-1 ${isDark ? 'bg-dm-card border-white/10' : 'bg-white border-[rgba(34,34,34,0.1)]'}`}
+                className={`flex items-center gap-3.5 border rounded-2xl px-5 py-4 transition-all hover:border-brand-orange hover:translate-x-1 ${isDark ? "bg-dm-card border-white/10" : "bg-white border-[rgba(34,34,34,0.1)]"}`}
               >
                 {inner}
               </motion.a>
@@ -100,7 +110,7 @@ export function ContactSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: i * 0.07 }}
-                className={`flex items-center gap-3.5 border rounded-2xl px-5 py-4 ${isDark ? 'bg-dm-card border-white/10' : 'bg-white border-[rgba(34,34,34,0.1)]'}`}
+                className={`flex items-center gap-3.5 border rounded-2xl px-5 py-4 ${isDark ? "bg-dm-card border-white/10" : "bg-white border-[rgba(34,34,34,0.1)]"}`}
               >
                 {inner}
               </motion.div>
@@ -116,15 +126,35 @@ export function ContactSection() {
             className="bg-brand-orange rounded-2xl px-5 py-5 flex items-center justify-between gap-4"
           >
             <div>
-              <p className="font-syne text-[17px] font-extrabold text-white mb-1">{AVAILABILITY_INFO.heading}</p>
-              <p className="text-[13px] text-white/75">{AVAILABILITY_INFO.subtext}</p>
+              <p className="font-syne text-[17px] font-extrabold text-white mb-1">
+                {AVAILABILITY_INFO.heading}
+              </p>
+              <p className="text-[13px] text-white/75">
+                {AVAILABILITY_INFO.subtext}
+              </p>
             </div>
             <div className="flex items-center gap-2 bg-white/15 border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
               <span className="w-[7px] h-[7px] rounded-full bg-white animate-pulse_dot flex-shrink-0" />
-              <span className="text-[13px] font-bold text-white">{AVAILABILITY_INFO.badge}</span>
+              <span className="text-[13px] font-bold text-white">
+                {AVAILABILITY_INFO.badge}
+              </span>
             </div>
           </motion.div>
         </motion.div>
+{/* 
+        <motion.div
+          className="flex items-center justify-center"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
+          <img
+            src="/chat_bubbles.svg"
+            alt="Contact illustration"
+            className="w-full max-w-[480px]"
+          />
+        </motion.div> */}
       </div>
     </div>
   );
