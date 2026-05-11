@@ -34,7 +34,7 @@ export const CONTACT_CARDS: ContactCard[] = [
     id: 'location',
     icon: '📍',
     label: 'Location',
-    value: 'Hyderabad, India',
+    value: 'Hyderabad, Telangana, India',
   },
 ];
 

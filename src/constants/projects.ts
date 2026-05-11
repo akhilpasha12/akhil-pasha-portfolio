@@ -1,12 +1,12 @@
-import type { Project, ProjectFilterOption } from '../types';
+import type { Project, ProjectFilterOption } from "../types";
 
 // Fixed: filter labels aligned with test expectations
 export const PROJECT_FILTERS: ProjectFilterOption[] = [
-  { value: 'all', label: 'All Projects' },
-  { value: 'rn', label: 'React Native' },
-  { value: 'rj', label: 'React.js' },
-  { value: 'nx', label: 'Next.js' },
-  { value: 'rd', label: 'Full Stack' },
+  { value: "all", label: "All Projects" },
+  { value: "rn", label: "React Native" },
+  { value: "rj", label: "React.js" },
+  { value: "nx", label: "Next.js" },
+  { value: "rd", label: "Full Stack" },
 ];
 
 export const PROJECTS: Project[] = [
@@ -121,30 +121,56 @@ export const PROJECTS: Project[] = [
     githubUrl: "#",
     demoLabel: "Live Demo →",
   },
+  // {
+  //   id: "syncfield-offline-sync",
+  //   category: "rd",
+  //   bgColor: "#0a1f1c",
+  //   emoji: "🔄",
+  //   catLabel: "React Native + Node.js",
+  //   catVariant: "muted",
+  //   title: "SyncField — Offline Data Sync App",
+  //   description:
+  //     "I designed and built an offline-first mobile application that reliably captures form data and images without internet connectivity and synchronizes them to a cloud backend when the network is restored. The system uses a local queue with idempotent API handling to prevent duplicate submissions and ensures seamless data consistency across unstable network conditions.",
+  //   stack: [
+  //     "React Native",
+  //     "AsyncStorage",
+  //     "NetInfo",
+  //     "Node.js",
+  //     "Express.js",
+  //     "MongoDB Atlas",
+  //     "Multer",
+  //     "Axios",
+  //     "Backend hosted on Render",
+  //   ],
+  //   links: false,
+  //   demoUrl: "#",
+  //   githubUrl: "#",
+  //   demoLabel: "Live Demo →",
+  // },
   {
-    id: "syncfield-offline-sync",
+    id: "connectlive-realtime-chat",
     category: "rd",
-    bgColor: "#0a1f1c",
-    emoji: "🔄",
+    bgColor: "#111827",
+    emoji: "💬",
     catLabel: "React Native + Node.js",
     catVariant: "muted",
-    title: "SyncField — Offline Data Sync App",
+    title: "ConnectLive — Real-Time Chat App",
     description:
-      "I designed and built an offline-first mobile application that reliably captures form data and images without internet connectivity and synchronizes them to a cloud backend when the network is restored. The system uses a local queue with idempotent API handling to prevent duplicate submissions and ensures seamless data consistency across unstable network conditions.",
+      "Built a real-time chat application with instant messaging, live location sharing, and push notifications using WebSockets. Implemented scalable backend APIs, persistent chat storage, and real-time communication for seamless user interaction.",
     stack: [
       "React Native",
-      "AsyncStorage",
-      "NetInfo",
+      "Socket.IO",
       "Node.js",
       "Express.js",
       "MongoDB Atlas",
-      "Multer",
+      "Firebase Cloud Messaging (FCM)",
+      "React Native Maps",
       "Axios",
       "Backend hosted on Render",
     ],
-    links: false,
-    demoUrl: "#",
-    githubUrl: "#",
+    links: true,
+    demoUrl: "/assets/video/demo.mp4",
+    githubUrl: "https://github.com/akhilpasha12",
     demoLabel: "Live Demo →",
   },
   {
@@ -157,12 +183,7 @@ export const PROJECTS: Project[] = [
     title: "v1 Personal Portfolio",
     description:
       "A high-performance personal showcase built with React and Tailwind CSS. It features a modular architecture using Custom Hooks for state logic and React Router for seamless client-side navigation. The UI focuses on a clean, utility-first aesthetic to highlight professional experience and project technicalities.",
-    stack: [
-      "React.js",
-      "Tailwind CSS",
-      "React Router",
-      "Live on Netlify",
-    ],
+    stack: ["React.js", "Tailwind CSS", "React Router", "Live on Netlify"],
     links: true,
     demoUrl: "https://akhilpasha.netlify.app/",
     githubUrl: "https://github.com/akhilpasha12",
