@@ -11,6 +11,73 @@ export const PROJECT_FILTERS: ProjectFilterOption[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: "movie-explorer",
+    category: "rd",
+    bgColor: "#1c1032",
+    emoji: "🎬",
+    featured: true,
+    catLabel: "React Native + Node.js",
+    catVariant: "muted",
+    title: "Movie Explorer",
+    description:
+      "I built a full-stack movie discovery app powered by the TMDB API, with a typed API layer and TanStack Query driving infinite scroll, caching, and optimistic updates. The app includes in-app trailer playback, a Node.js/Express + SQLite + JWT backend deployed on Render, and a custom Android Kotlin native module. A Gemini-powered AI chat assistant with an animated FAB and rich markdown message rendering rounds out the experience, backed by global network-aware handling and FlatList performance tuning.",
+    stack: [
+      "React Native",
+      "TypeScript",
+      "TanStack Query",
+      "TMDB API",
+      "Node.js",
+      "Express.js",
+      "SQLite",
+      "JWT",
+      "Kotlin (Native Module)",
+      "Google Gemini API",
+      "Backend hosted on Render",
+    ],
+    links: false,
+    demoUrl: "#",
+    githubUrl: "https://github.com/akhilpasha12",
+    demoLabel: "Live Demo →",
+  },
+  // {
+  //   id: "cycle-tracker",
+
+  //   category: "rn",
+
+  //   bgColor: "#A51F4D",
+
+  //   emoji: "🌸",
+
+  //   featured: true,
+
+  //   catLabel: "React Native + TypeScript",
+
+  //   catVariant: "muted",
+
+  //   title: "CycleTracker",
+
+  //   description:
+  //     "I built a privacy-focused menstrual cycle tracking app using React Native and TypeScript, with local SQLite storage for cycle history and daily logs. The app includes cycle predictions, period and ovulation estimates, calendar-based tracking, statistics, customizable reminders, and daily check-in notifications. Zustand manages application state, while Notifee handles scheduled notifications, notification actions, background events, and notification-driven navigation. The app is designed around an offline-first approach with a clean, focused mobile experience.",
+  //   stack: [
+  //     "React Native",
+  //     "TypeScript",
+  //     "Zustand",
+  //     "SQLite",
+  //     "Notifee",
+  //     "React Navigation",
+  //     "Android",
+  //     "Local Storage",
+  //   ],
+
+  //   links: false,
+
+  //   demoUrl: "#",
+
+  //   githubUrl: "https://github.com/akhilpasha12",
+
+  //   demoLabel: "Live Demo →",
+  // },
+  {
     id: "nep-portal",
     category: "rn",
     bgColor: "#1a1a2e",
@@ -121,6 +188,7 @@ export const PROJECTS: Project[] = [
     githubUrl: "#",
     demoLabel: "Live Demo →",
   },
+
   // {
   //   id: "syncfield-offline-sync",
   //   category: "rd",
